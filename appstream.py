@@ -75,4 +75,4 @@ if(st.button("Predict Price")):
 
     
     
-    st.footer('HIMANSHU SINGH RAJPUT')
+    st.footer("HIMANSHU SINGH RAJPUT")
