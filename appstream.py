@@ -85,7 +85,7 @@ if(st.button("Predict Price")):
 
 
 
-ft = "HIMANSHU SINGH RAJPUT"
+ft = ""
 <style>
 a:link , a:visited{
 color: #BFBFBF;  /* theme's text color hex code at 75 percent brightness*/
@@ -130,6 +130,5 @@ with <img src="https://em-content.zobj.net/source/skype/289/red-heart_2764-fe0f.
 </div>
 """
 st.write(ft, unsafe_allow_html=True)
-
 
 
