@@ -72,3 +72,7 @@ if(st.button("Predict Price")):
     price=int(modelpred(postedby,loci,undercon,rer, bhk,sqrft,redytomove,resaler))
     st.text("precited selling price in Lacs is: "+str(price))
     #modelpred('Dealer','mumbai',1,1, 4,1780,1,1)
+
+    
+    
+    st.footer('HIMANSHU SINGH RAJPUT')
