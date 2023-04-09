@@ -41,13 +41,13 @@ def modelpred(postby,location,undconstru,rera,bhkno,sqft,readytomove,resale):
 
 st.set_page_config(layout="wide")
 
-st.title("House price prediction")
-st.write("This project is devoloped for miniskill project of datamining lab ")
+st.title("House Price Prediction")
+st.write("This Project is Devoloped for MiniSkill Project of Data Mining Lab ")
 
 
-col1, col2,col3,col4 = st.tabs(['tab1','tab2','tab3','tab4'])
+col1, col2,col3,col4 = st.tabs(['Tab1','Tab2','Tab3','Tab4'])
 with col1:
-    loci = st.selectbox(" Select address : ",
+    loci = st.selectbox(" Select Address : ",
                      address)
 
     sqrft = st.slider('how much sqft ',900, 7000, 10)
