@@ -74,5 +74,4 @@ if(st.button("Predict Price")):
     #modelpred('Dealer','mumbai',1,1, 4,1780,1,1)
 
     
-    
-    st.footer("HIMANSHU SINGH RAJPUT")
+  
