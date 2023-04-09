@@ -42,26 +42,26 @@ def modelpred(postby,location,undconstru,rera,bhkno,sqft,readytomove,resale):
 st.set_page_config(layout="wide")
 
 st.title("House price prediction")
-st.write("This project is devoloped for miniskill project of datamining lab ")
+st.write("This Project is Devoloped for MiniSkill Project of Data Mining Lab ")
 
 
-col1, col2,col3,col4 = st.tabs(['tab1','tab2','tab3','tab4'])
+col1, col2,col3,col4 = st.tabs(['Tab 1','Tab 2','Tab 3','Tab 4'])
 with col1:
-    loci = st.selectbox(" Select address : ",
+    loci = st.selectbox(" Select Address : ",
                      address)
 
     sqrft = st.slider('how much sqft ',900, 7000, 10)
 with col2:
     postedby=st.selectbox("postedby",postby)
-    bhk=int(st.text_input('no of bhk', '2'))
+    bhk=int(st.text_input('No of BHK', '2'))
     
 with col3:
-    undercon = int(st.checkbox("is this underconstruction"))
-    rer=int(st.checkbox('A RERA project or not '))
+    undercon = int(st.checkbox("is this Under Construction"))
+    rer=int(st.checkbox('AREA project or not '))
   
 with col4:
     
-  resaler =int(st.checkbox('is it for resale '))
+  resaler =int(st.checkbox('is it for RESALE '))
   redytomove =int(st.checkbox('is it ready to move '))
 
 
@@ -70,5 +70,5 @@ if(st.button("Predict Price")):
     
 
     price=int(modelpred(postedby,loci,undercon,rer, bhk,sqrft,redytomove,resaler))
-    st.text("precited selling price in lacs is: "+str(price))
+    st.text("precited selling price in Lacs is: "+str(price))
     #modelpred('Dealer','mumbai',1,1, 4,1780,1,1)
