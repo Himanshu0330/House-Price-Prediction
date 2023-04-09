@@ -45,7 +45,7 @@ st.title("House price prediction")
 st.write("This Project is Devoloped for MiniSkill Project of Data Mining Lab ")
 
 
-col1, col2,col3,col4 = st.tabs(['Sq. Ft.','Tab 2','Tab 3','Tab 4'])
+col1, col2,col3,col4 = st.tabs(['Sq. Ft.','BHK','Tab 3','Tab 4'])
 with col1:
     loci = st.selectbox(" Select Address : ",
                      address)
