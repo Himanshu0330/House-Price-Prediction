@@ -41,7 +41,7 @@ def modelpred(postby,location,undconstru,rera,bhkno,sqft,readytomove,resale):
 
 st.set_page_config(layout="wide")
 
-st.title("House price prediction")
+st.title("HOUSE PRICE PREDICTION")
 st.write("This Project is Devoloped for MiniSkill Project of Data Mining Lab ")
 
 
