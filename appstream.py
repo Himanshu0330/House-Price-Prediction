@@ -22,13 +22,13 @@ pickled_model = pickle.load(open('modelprice.pkl', 'rb'))
 
 address=df['ADDRESS'].unique()
 postby=df['POSTED_BY'].unique()
-#POSTED_BY>>	UNDER_CONSTRUCTION>>2	RERA	>>3BHK_NO.>>4		SQUARE_FT>>5	READY_TO_MOVE	>>6RESALE>>7	ADDRESS	>>8
+#POSTED_BY>>	UNDER_CONSTRUCTION>>2	AREA	>>3BHK_NO.>>4		SQUARE_FT>>5	READY_TO_MOVE	>>6RESALE>>7	ADDRESS	>>8
 def modelpred(postby,location,undconstru,rera,bhkno,sqft,readytomove,resale):
-  keys = ['POSTED_BY', 'UNDER_CONSTRUCTION', 'RERA', 'BHK_NO.', 'SQUARE_FT', 'READY_TO_MOVE', 'RESALE', 'ADDRESS']
+  keys = ['POSTED_BY', 'UNDER_CONSTRUCTION', 'AREA', 'BHK_NO.', 'SQUARE_FT', 'READY_TO_MOVE', 'RESALE', 'ADDRESS']
   arr={}
   arr['POSTED_BY']=lepost.transform([postby])[0]
   arr['UNDER_CONSTRUCTION']=undconstru
-  arr['RERA']=rera
+  arr['AREA']=area
   arr['BHK_NO.']=bhkno
   arr['SQUARE_FT']=sqft
   arr['READY_TO_MOVE']=readytomove
@@ -56,8 +56,8 @@ with col2:
     bhk=int(st.text_input('no of bhk', '2'))
     
 with col3:
-    undercon = int(st.checkbox("is this underconstruction"))
-    rer=int(st.checkbox('A RERA project or not '))
+    undercon = int(st.checkbox("is this Under Construction"))
+    rer=int(st.checkbox('A AREA Project or not '))
   
 with col4:
     
